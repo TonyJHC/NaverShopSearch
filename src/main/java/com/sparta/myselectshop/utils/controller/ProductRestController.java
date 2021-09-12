@@ -1,6 +1,5 @@
 package com.sparta.myselectshop.utils.controller;
 
-import com.sparta.myselectshop.utils.domain.Product;
 import com.sparta.myselectshop.utils.domain.ProductRepository;
 import com.sparta.myselectshop.utils.domain.ProductRequestDto;
 import com.sparta.myselectshop.utils.service.ProductService;
