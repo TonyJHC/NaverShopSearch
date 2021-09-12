@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter // get 함수를 일괄적으로 만들어줍니다.
 @NoArgsConstructor // 기본 생성자를 만들어줍니다.
 @Entity // DB 테이블 역할을 합니다. ( 테이블이 자동으로 생성되도록 )
-public class Product extends Timestamped{
+public class Product extends Timestamped {
 
     // ID가 자동으로 생성 및 증가합니다.
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -32,4 +32,17 @@ public class Product extends Timestamped{
 
     @Column(nullable = false)
     private int myprice; // 내가 설정한 관심 가격
+
+    // 관심 상품 등록하는 버튼을 눌렸을 때 productRequestDto 를 받아서 테이블로 만들어 줘야하니까 새로운 생성자가 필요함
+    public Product(ProductRequestDto productRequestDto) {
+        this.title = productRequestDto.getTitle();
+        this.link = productRequestDto.getLink();
+        this.lprice = productRequestDto.getLprice();
+        this.image = productRequestDto.getImage();
+        this.myprice = 0; // 최저가 설정을 처음에 0으로 해놓으면 최저가가 아닌 상품에 무분별하게 최저가 딱지가 붙는 것을 방지할 수 있다.
+    }
+
+    public void update(ProductMyPriceRequestDto productMyPriceRequestDto) {
+        this.myprice = productMyPriceRequestDto.getMyprice();
+    }
 }

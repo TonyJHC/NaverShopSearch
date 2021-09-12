@@ -3,6 +3,7 @@ package com.sparta.myselectshop.utils;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
+// 네이버 테스트
 public class NaverShopSearch {
     public String search() {
         // ARC에서 복사해온 코드를 넣음

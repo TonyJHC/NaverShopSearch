@@ -2,13 +2,9 @@ package com.sparta.myselectshop.controller;
 
 import com.sparta.myselectshop.models.Product;
 import com.sparta.myselectshop.models.ProductRepository;
-import com.sparta.myselectshop.utils.domain.ProductRequestDto;
-import com.sparta.myselectshop.utils.service.ProductService;
+import com.sparta.myselectshop.models.ProductRequestDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,6 +17,15 @@ public class ProductRestController {
     // 등록된 전체 상품 목록 조회
     @GetMapping("/api/products")
     public List<Product> getProducts() {
+        System.out.println("GET----------");
         return productRepository.findAll();
+    }
+
+    @PostMapping("/api/products")
+    public Product createProduct(@RequestBody ProductRequestDto productRequestDto){
+        System.out.println("POST Product-------");
+        Product product = new Product(productRequestDto);
+        productRepository.save(product);
+        return product;
     }
 }
