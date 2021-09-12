@@ -1,4 +1,4 @@
-package com.sparta.myselectshop.utils.controller;
+package com.sparta.myselectshop.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
