@@ -21,6 +21,8 @@ public class ProductRestController {
         return productRepository.findAll();
     }
 
+
+
     @PostMapping("/api/products")
     public Product createProduct(@RequestBody ProductRequestDto productRequestDto){
         System.out.println("POST Product-------");

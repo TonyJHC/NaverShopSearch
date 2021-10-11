@@ -1,15 +1,23 @@
 package com.sparta.myselectshop.utils;
 
 import com.sparta.myselectshop.models.ItemDto;
+import lombok.RequiredArgsConstructor;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.http.*;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
 
 // 네이버 테스트
+/*
+* 스프링이 자동으로 필요한 클래스를 필요한 곳에 생성하려면,
+* 사용자가 요구하면 자동으로 생성할 클래스 목록이 뭔지 명시해줘야됨.
+*   --> 등록하는 방법이 컴포넌트 등록
+* */
+@Component
 public class NaverShopSearch {
     public String search(String query) {
         // ARC에서 복사해온 코드를 넣음
