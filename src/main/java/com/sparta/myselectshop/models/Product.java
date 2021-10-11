@@ -27,6 +27,8 @@ public class Product extends Timestamped {
     @Column(nullable = false)
     private String link; //
 
+
+
     @Column(nullable = false)
     private int lprice; // 화면에 표시되는 최저가
 
