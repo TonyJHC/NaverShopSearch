@@ -1,4 +1,4 @@
-package com.sparta.myselectshop.controller;
+package com.sparta.myselectshop.controller.Search;
 
 import com.sparta.myselectshop.models.ItemDto;
 import com.sparta.myselectshop.utils.NaverShopSearch;

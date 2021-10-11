@@ -1,4 +1,4 @@
-package com.sparta.myselectshop.controller;
+package com.sparta.myselectshop.controller.Product;
 
 import com.sparta.myselectshop.models.Product;
 import com.sparta.myselectshop.models.ProductRepository;
