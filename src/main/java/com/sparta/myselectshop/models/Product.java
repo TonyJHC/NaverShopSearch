@@ -1,6 +1,8 @@
 package com.sparta.myselectshop.models;
 
 
+import com.sparta.myselectshop.models.Dto.ProductMyPriceRequestDto;
+import com.sparta.myselectshop.models.Dto.ProductRequestDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

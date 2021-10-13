@@ -1,4 +1,4 @@
-package com.sparta.myselectshop.models;
+package com.sparta.myselectshop.models.Dto;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

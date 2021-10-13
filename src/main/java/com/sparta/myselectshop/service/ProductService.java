@@ -1,7 +1,7 @@
 package com.sparta.myselectshop.service;
 
 import com.sparta.myselectshop.models.Product;
-import com.sparta.myselectshop.models.ProductMyPriceRequestDto;
+import com.sparta.myselectshop.models.Dto.ProductMyPriceRequestDto;
 import com.sparta.myselectshop.models.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

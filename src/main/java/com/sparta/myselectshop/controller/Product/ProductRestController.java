@@ -2,7 +2,7 @@ package com.sparta.myselectshop.controller.Product;
 
 import com.sparta.myselectshop.models.Product;
 import com.sparta.myselectshop.models.ProductRepository;
-import com.sparta.myselectshop.models.ProductRequestDto;
+import com.sparta.myselectshop.models.Dto.ProductRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

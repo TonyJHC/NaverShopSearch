@@ -1,6 +1,6 @@
 package com.sparta.myselectshop.controller.Search;
 
-import com.sparta.myselectshop.models.ItemDto;
+import com.sparta.myselectshop.models.Dto.ItemDto;
 import com.sparta.myselectshop.utils.NaverShopSearch;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
