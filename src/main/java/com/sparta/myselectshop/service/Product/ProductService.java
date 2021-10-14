@@ -1,4 +1,4 @@
-package com.sparta.myselectshop.service;
+package com.sparta.myselectshop.service.Product;
 
 import com.sparta.myselectshop.models.Entity.Product;
 import com.sparta.myselectshop.models.Dto.ProductMyPriceRequestDto;
