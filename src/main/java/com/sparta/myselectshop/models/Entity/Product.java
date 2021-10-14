@@ -1,8 +1,9 @@
-package com.sparta.myselectshop.models;
+package com.sparta.myselectshop.models.Entity;
 
 
 import com.sparta.myselectshop.models.Dto.ProductMyPriceRequestDto;
 import com.sparta.myselectshop.models.Dto.ProductRequestDto;
+import com.sparta.myselectshop.models.Timestamped;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
